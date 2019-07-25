@@ -11,7 +11,7 @@ Dependencies (already included as sub-modules):
 3. Meta-openembedded (git://git.openembedded.org/meta-openembedded)
 4. Meta-intel -optional - for intel support (http://git.yoctoproject.org/git/meta-intel)
 
-Make sure to update the necessery destination machine under the file build/conf/local.conf
+Make sure to check those dependencies licenses!
 
 To build the image:
 -------------------
@@ -19,10 +19,16 @@ To build the image:
 2. Use git featch sub-modules
 3. cd docto
 4. source poky/oe-init-build-env
-5. bitbake core-image-base
+5. update the necessery destination machine under the file build/conf/local.conf
+6. bitbake core-image-base
 
 To run it under qemu:
 ---------------------
 runqemu nographic
 
 Or if it was built for another machine the image should be inside build/tmp/deploy/images
+
+Current status:
+---------------
+Due to an issue with the docker daemon it fails to to start.
+Help wanted
