@@ -30,5 +30,4 @@ Or if it was built for another machine the image should be inside build/tmp/depl
 
 Current status:
 ---------------
-Due to an issue with the docker daemon it fails to to start.
-Help wanted
+Stable and working
